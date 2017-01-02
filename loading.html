@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+  path {
+    fill: green;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-name: circleon;
+  }
+
+  path:nth-child(4n+1) {
+    animation-delay: 0.0s;
+  }
+  path:nth-child(4n+2) {
+    animation-delay: 0.2s;
+  }
+  path:nth-child(4n+3) {
+    animation-delay: 0.4s;
+  }
+  path:nth-child(4n+4) {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes circleon {
+    from {
+      fill: lightgreen;
+      transform: scale(1.1);
+    }
+  }
+
+  footer {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: green;
+    padding: 6px;
+    padding-left: 8px;
+  }
+
+  .loading {
+    opacity: 0;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: ellipseon;
+    animation-timing-function: ease-in-out;
+  }
+
+  .loading:nth-child(1) {
+    animation-delay: 0.6s;
+  }
+  .loading:nth-child(2) {
+    animation-delay: 1.0s;
+  }
+  .loading:nth-child(3) {
+    animation-delay: 1.4s;
+  }
+  .loading:nth-child(4) {
+    animation-delay: 1.8s;
+  }
+  .loading:nth-child(5) {
+    animation-delay: 2.2s;
+  }
+  .loading:nth-child(6) {
+    animation-delay: 2.6s;
+  }
+  .loading:nth-child(7) {
+    animation-delay: 3.0s;
+  }
+  @keyframes ellipseon {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+  <article style="position: fixed; top: 40%; left: 40%;">
+    <section style="display: flex; align-items: center; width: 100px; flex-direction: column; justify-content: center;">
+      <svg style="display: block; padding: 15px" viewBox="0 0 101 44">
+        <path d="M8.11667352,16 C12.5349515,16 16.1166735,12.418278 16.1166735,8 C16.1166735,3.581722 12.5349515,1.14805194e-15 8.11667352,1.14805194e-15 C3.69839552,1.14805194e-15 0.11667352,3.581722 0.11667352,8 C0.11667352,12.418278 3.69839552,16 8.11667352,16 Z"></path>
+        <path d="M36.1166735,16 C40.5349515,16 44.1166735,12.418278 44.1166735,8 C44.1166735,3.581722 40.5349515,1.14805194e-15 36.1166735,1.14805194e-15 C31.6983955,1.14805194e-15 28.1166735,3.581722 28.1166735,8 C28.1166735,12.418278 31.6983955,16 36.1166735,16 Z"></path>
+        <path d="M64.1166735,16 C68.5349515,16 72.1166735,12.418278 72.1166735,8 C72.1166735,3.581722 68.5349515,1.14805194e-15 64.1166735,1.14805194e-15 C59.6983955,1.14805194e-15 56.1166735,3.581722 56.1166735,8 C56.1166735,12.418278 59.6983955,16 64.1166735,16 Z"></path>
+        <path d="M92.1166735,16 C96.5349515,16 100.116674,12.418278 100.116674,8 C100.116674,3.581722 96.5349515,1.14805194e-15 92.1166735,1.14805194e-15 C87.6983955,1.14805194e-15 84.1166735,3.581722 84.1166735,8 C84.1166735,12.418278 87.6983955,16 92.1166735,16 Z"></path>
+        <path d="M8.11667352,44 C12.5349515,44 16.1166735,40.418278 16.1166735,36 C16.1166735,31.581722 12.5349515,28 8.11667352,28 C3.69839552,28 0.11667352,31.581722 0.11667352,36 C0.11667352,40.418278 3.69839552,44 8.11667352,44 Z"></path>
+        <path d="M36.1166735,44 C40.5349515,44 44.1166735,40.418278 44.1166735,36 C44.1166735,31.581722 40.5349515,28 36.1166735,28 C31.6983955,28 28.1166735,31.581722 28.1166735,36 C28.1166735,40.418278 31.6983955,44 36.1166735,44 Z"></path>
+        <path d="M64.1166735,44 C68.5349515,44 72.1166735,40.418278 72.1166735,36 C72.1166735,31.581722 68.5349515,28 64.1166735,28 C59.6983955,28 56.1166735,31.581722 56.1166735,36 C56.1166735,40.418278 59.6983955,44 64.1166735,44 Z"></path>
+        <path d="M92.1166735,44 C96.5349515,44 100.116674,40.418278 100.116674,36 C100.116674,31.581722 96.5349515,28 92.1166735,28 C87.6983955,28 84.1166735,31.581722 84.1166735,36 C84.1166735,40.418278 87.6983955,44 92.1166735,44 Z"></path>
+      </svg>
+      <footer>
+        <span class="loading">l</span>
+        <span class="loading">o</span>
+        <span class="loading">a</span>
+        <span class="loading">d</span>
+        <span class="loading">i</span>
+        <span class="loading">n</span>
+        <span class="loading">g</span>
+      </footer>
+    </section>
+  </article>
+</body>
+</html>
